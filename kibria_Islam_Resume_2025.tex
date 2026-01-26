@@ -38,10 +38,10 @@
 }
 
 \newcommand{\sectiontitle}[1]{
-  \vspace{0.15cm}
-  \noindent{\normalsize\bfseries\color{accent}\MakeUppercase{#1}} \\[-0.15cm]
+  \vspace{0.12cm}
+  \noindent{\normalsize\bfseries\color{accent}\MakeUppercase{#1}} \\[-0.12cm]
   \noindent\textcolor{accent}{\rule{\linewidth}{1pt}}
-  \vspace{0.03cm}
+  \vspace{0.02cm}
 }
 
 \newcommand{\sidebartitle}[1]{
@@ -99,24 +99,24 @@
   \sectiontitle{Professional Summary}
   \footnotesize
   \noindent \textbf{Senior Software Engineer} with \textbf{4+ years} architecting scalable backend systems using \textbf{ASP.NET Core} and \textbf{RESTful APIs}. Led initiatives improving performance \textbf{40\%+}, reducing costs \textbf{30\%}, achieving \textbf{99.9\% uptime} for platforms serving \textbf{10,000+ users}. Expert in \textbf{system design}, \textbf{microservices}, \textbf{Clean Architecture}, cloud solutions. Technical leadership: mentoring engineers, establishing best practices, driving architectural decisions.
-  \vspace{0.1cm}
+  \vspace{0.08cm}
 
   % WORK EXPERIENCE
   \sectiontitle{Work Experience}
   
   \cventry{Software Engineer - L2 (Senior Backend Developer)}{October 2023 – Present}{Vector360}{Dhaka, Bangladesh (Remote)}{ 
-   \item Architected enterprise \textbf{ERP system} and \textbf{SmartKrishok} platform serving \textbf{10,000+ concurrent users} with \textbf{99.9\% uptime}. Designed scalable \textbf{microservices} with \textbf{Clean Architecture} and \textbf{CQRS}, reducing complexity \textbf{35\%}
-   \item Designed \textbf{RESTful APIs} with \textbf{ASP.NET Core 8}: versioning, rate limiting, distributed caching, Swagger. Optimized queries and Redis caching, achieving \textbf{40\% faster response times} (450ms to 270ms)
-   \item Enhanced \textbf{multi-tenant SaaS platform} handling \textbf{500+ tenants} with strict isolation. Implemented tenant-aware middleware and dynamic connection management, ensuring \textbf{zero data leakage}
-   \item Managed \textbf{AWS}/\textbf{DigitalOcean} infrastructure, \textbf{Nginx}, and \textbf{CI/CD pipelines}. Automated deployments reduced release time \textbf{60\%} and errors \textbf{80\%}
+   \item Architected and developed \textbf{DistribuSync} (enterprise ERP system) serving \textbf{10,000+ concurrent users} with \textbf{99.9\% uptime}. Designed scalable \textbf{microservices} with \textbf{Clean Architecture} and \textbf{CQRS}, reducing complexity \textbf{35\%}
+   \item Led government projects: \textbf{SmartKrishok} (50,000+ farmers), \textbf{E-waste Management System}, internal tools. Designed \textbf{RESTful APIs} with \textbf{ASP.NET Core 8}: versioning, rate limiting, caching, Swagger
+   \item Enhanced \textbf{multi-tenant SaaS platform} handling \textbf{500+ tenants} with strict isolation. Implemented tenant-aware middleware, ensuring \textbf{zero data leakage}
+   \item Managed \textbf{AWS}/\textbf{DigitalOcean} infrastructure, \textbf{Nginx}, \textbf{CI/CD pipelines}. Automated deployments reduced release time \textbf{60\%} and errors \textbf{80\%}
    \item Implemented \textbf{JWT authentication}, OAuth 2.0, \textbf{OWASP principles}. Optimized performance through profiling and indexing, improving throughput \textbf{50\%}
-   \item Mentored 2 junior developers, established coding standards, led design discussions and architecture reviews. Achieved \textbf{75\%+ test coverage} with unit/integration tests
+   \item \textbf{Technical Leadership:} Mentored junior software engineers, established coding standards, led design discussions and architecture reviews. Achieved \textbf{75\%+ test coverage}
   }
 
   \cventry{Software Engineer (Backend Developer)}{August 2022 – September 2023}{Reserveit}{Dhaka, Bangladesh (Remote)}{ 
-    \item Developed \textbf{multi-tenant reservation platform} using \textbf{ASP.NET Core 6/7} with booking, payment, notification systems
-    \item Built \textbf{RESTful APIs} with proper HTTP codes, error handling, documentation. Optimized \textbf{Entity Framework Core} patterns, reducing query time \textbf{30\%}
-    \item Implemented \textbf{microservices architecture} for booking, payment, notification services, improving scalability
+    \item \textbf{Codebase Refactoring:} Refactored legacy codebase and transformed \textbf{Reserveit platform} into fully workable, production-ready system. Introduced \textbf{Clean Architecture} for improved code organization, maintainability, and scalability
+    \item Developed \textbf{multi-tenant reservation platform} using \textbf{ASP.NET Core 6/7} with booking, payment, notification systems. Built \textbf{RESTful APIs} with proper HTTP codes, error handling, documentation
+    \item Optimized \textbf{Entity Framework Core} patterns and database queries, reducing query time \textbf{30\%}. Implemented \textbf{microservices architecture} for booking, payment, notification services
     \item Collaborated with cross-functional teams in agile environment, participated in sprint planning and technical decisions
   }
 
@@ -133,17 +133,17 @@
     \item \textbf{ASP.NET Core 8} multi-tenant SaaS with \textbf{Clean Architecture}, \textbf{CQRS} (MediatR), \textbf{SignalR} real-time, \textbf{Hangfire} jobs, \textbf{Serilog} logging. \textbf{80\%+ test coverage}
   }
 
-  \cventry{SmartKrishok - Government Platform}{2024}{Vector360}{Production}{
-    \item Architected backend for \textbf{50,000+ farmers}: real-time market prices, weather data. \textbf{RESTful APIs} with versioning, caching, optimized queries
+  \cventry{DistribuSync - Enterprise ERP}{2024-2025}{Vector360}{Production}{
+    \item Comprehensive ERP: inventory, HR, finance modules. \textbf{Microservices} with API Gateway, indexing, audit trails. \textbf{10,000+ users}, \textbf{99.9\% uptime}
   }
 
-  \cventry{Enterprise ERP System}{2024-2025}{Vector360}{Production}{
-    \item Led ERP development: inventory, HR, finance modules. \textbf{Microservices} with API Gateway, indexing, audit trails
+  \cventry{SmartKrishok \& E-waste Management}{2024}{Vector360 | Government}{Production}{
+    \item \textbf{SmartKrishok:} Backend for \textbf{50,000+ farmers} - real-time market prices, weather data. \textbf{E-waste Management:} Tracking, reporting, compliance. Both using \textbf{ASP.NET Core} and \textbf{RESTful APIs}
   }
   
   % AWARDS
   \sectiontitle{Awards \& Recognition}
-  \begin{itemize}[itemsep=0.2pt, topsep=0pt]
+  \begin{itemize}[itemsep=0.15pt, topsep=0pt]
     \item \textbf{Engineer of the Month (Nov 2025)} - ERP: \textbf{45\%} automation, \textbf{99.95\% uptime}
     \item \textbf{Engineer of the Month (Apr 2025)} - API: \textbf{50\%} stability, \textbf{35\%} satisfaction
     \item \textbf{Quarterly Excellence (Q3 2024)} - Outstanding performance, high-impact projects
