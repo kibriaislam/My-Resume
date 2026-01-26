@@ -58,6 +58,14 @@
   \begin{itemize}[topsep=0pt, itemsep=0.2pt, parsep=0pt, leftmargin=1.2em]#5\end{itemize}
 }
 
+% Extra spacing for the Work Experience section only (keeps Projects compact)
+\newcommand{\workentry}[5]{
+  \vspace{0.11cm}
+  \noindent\textbf{#1} \hfill \footnotesize\textit{#2} \\
+  \normalsize\textit{#3} \hfill \footnotesize\textit{#4}
+  \begin{itemize}[topsep=0pt, itemsep=0.2pt, parsep=0pt, leftmargin=1.2em]#5\end{itemize}
+}
+
 \newcommand{\personalinfo}[2]{
   \noindent\textbf{#1:} #2 \\
 }
@@ -104,19 +112,19 @@
   % WORK EXPERIENCE
   \sectiontitle{Work Experience}
   
-  \cventry{Software Engineer L-2 / Backend Specialist}{October 2023 – Present}{Vector360}{Dhaka, Bangladesh (Hybrid)}{ 
+  \workentry{Software Engineer L-2 / Backend Specialist}{October 2023 – Present}{Vector360}{Dhaka, Bangladesh (Hybrid)}{ 
    \item Built \textbf{DistribuSync} ERP (\textbf{10,000+ users}, \textbf{99.9\% uptime}) and government platforms \textbf{SmartKrishok} (\textbf{50,000+ farmers}) and \textbf{E-waste Management} using \textbf{ASP.NET Core 8} microservices and \textbf{Clean Architecture}
    \item Designed \textbf{REST APIs} (versioning, rate limiting, caching, Swagger) for \textbf{multi-tenant SaaS} (\textbf{500+ tenants}); implemented \textbf{JWT/OAuth 2.0} and \textbf{OWASP-aligned} security
    \item Owned \textbf{AWS}/\textbf{DigitalOcean} + \textbf{Nginx} + \textbf{CI/CD}; reduced release time \textbf{60\%} and errors \textbf{80\%}; improved throughput \textbf{50\%}; mentored juniors and drove \textbf{75\%+ test coverage}
   }
   
-  \cventry{Software Engineer (Backend Developer)}{August 2022 – September 2023}{Reserveit}{Dhaka, Bangladesh (On-site)}{ 
+  \workentry{Software Engineer (Backend Developer)}{August 2022 – September 2023}{Reserveit}{Dhaka, Bangladesh (On-site)}{ 
     \item Refactored legacy codebase and made the \textbf{Reserveit} platform production-ready; introduced \textbf{Clean Architecture} and \textbf{CQRS}
     \item Built \textbf{multi-tenant} booking, payment, and notification systems on \textbf{ASP.NET Core 6/7}; delivered \textbf{REST APIs} with robust error handling and docs
     \item Optimized \textbf{EF Core} queries (\textbf{30\%} faster) and implemented \textbf{microservices} for key domains
   }
   
-  \cventry{Junior Software Engineer}{October 2021 – July 2022}{Belaface Ltd}{Dhaka, Bangladesh (On-site)}{ 
+  \workentry{Junior Software Engineer}{October 2021 – July 2022}{Belaface Ltd}{Dhaka, Bangladesh (On-site)}{ 
     \item Developed \textbf{RESTful APIs} using \textbf{Django/Python} and \textbf{PostgreSQL} for e-commerce: product catalog, orders, authentication
     \item Built API endpoints for mobile/web apps. Optimized queries and caching, improving response times. Reduced critical bugs \textbf{40\%}
   }
