@@ -5,7 +5,7 @@
 \documentclass[11pt, a4paper]{article}
 
 % --- Preamble & Packages ---
-\usepackage[a4paper, top=0.6cm, bottom=0.6cm, left=0.9cm, right=0.9cm]{geometry}
+\usepackage[a4paper, top=0.5cm, bottom=0.5cm, left=0.8cm, right=0.8cm]{geometry}
 \usepackage{fontspec}
 \setmainfont{Inter}
 
@@ -34,10 +34,10 @@
 }
 
 \newcommand{\sectiontitle}[1]{
-  \vspace{0.2cm}
-  \noindent{\normalsize\bfseries\color{accent}\MakeUppercase{#1}} \\[-0.2cm]
+  \vspace{0.15cm}
+  \noindent{\normalsize\bfseries\color{accent}\MakeUppercase{#1}} \\[-0.15cm]
   \noindent\textcolor{accent}{\rule{\linewidth}{1pt}}
-  \vspace{0.05cm}
+  \vspace{0.03cm}
 }
 
 \newcommand{\sidebartitle}[1]{
@@ -48,10 +48,10 @@
 }
 
 \newcommand{\cventry}[5]{
-  \vspace{0.08cm}
+  \vspace{0.06cm}
   \noindent\textbf{#1} \hfill \footnotesize\textit{#2} \\
   \normalsize\textit{#3} \hfill \footnotesize\textit{#4}
-  \begin{itemize}[topsep=0pt, itemsep=0.3pt, parsep=0pt]#5\end{itemize}
+  \begin{itemize}[topsep=0pt, itemsep=0.2pt, parsep=0pt]#5\end{itemize}
 }
 
 \newcommand{\personalinfo}[2]{
@@ -70,10 +70,8 @@
   \faIcon{envelope} \href{mailto:kibriaislam82@gmail.com}{kibriaislam82@gmail.com} \;|\;
   \faIcon{phone} +8801912892907 \;|\;
   \faIcon{linkedin} \href{https://linkedin.com/in/kibriaislam}{linkedin.com/in/kibriaislam} \;|\;
-  \faIcon{github} \href{https://github.com/kibriaislam}{github.com/kibriaislam} \\
-  \faIcon{map-marker-alt} Dhaka, Bangladesh \;|\;
-  \faIcon{globe} \textbf{Work Authorization:} Seeking visa sponsorship for USA/Europe \;|\;
-  \faIcon{laptop} \textbf{Remote Work:} Available (Flexible time zones)
+  \faIcon{github} \href{https://github.com/kibriaislam}{github.com/kibriaislam}\;|\; 
+  \faIcon{map-marker-alt} Dhaka, Bangladesh 
   }
 \end{minipage}
 \hfill
@@ -82,11 +80,11 @@
   \setlength{\fboxsep}{0pt}
   \setlength{\fboxrule}{1pt}
   \fcolorbox{accent}{white}{%
-    \includegraphics[width=2.2cm,height=3.3cm,keepaspectratio]{C:/Users/reserveitbd/Pictures/kibriaimage.png}%
+    \includegraphics[width=2cm,height=3cm,keepaspectratio]{C:/Users/reserveitbd/Pictures/kibriaimage.png}%
   }
 \end{minipage}
 
-\vspace{0.1cm}
+\vspace{0.08cm}
 
 % --- MAIN LAYOUT ---
 \noindent
@@ -96,24 +94,24 @@
   % PROFESSIONAL SUMMARY
   \sectiontitle{Professional Summary}
   \footnotesize
-  \noindent \textbf{Senior Software Engineer} with \textbf{4+ years} architecting scalable backend systems using \textbf{ASP.NET Core} and \textbf{RESTful APIs}. Led initiatives improving performance by \textbf{40\%+}, reducing costs by \textbf{30\%}, achieving \textbf{99.9\% uptime} for platforms serving \textbf{10,000+ users}. Expert in \textbf{system design}, \textbf{microservices}, \textbf{Clean Architecture}, and cloud solutions. Strong technical leadership: mentoring engineers, establishing best practices, driving architectural decisions. Seeking senior opportunities in USA/Europe.
-  \vspace{0.15cm}
+  \noindent \textbf{Senior Software Engineer} with \textbf{4+ years} architecting scalable backend systems using \textbf{ASP.NET Core} and \textbf{RESTful APIs}. Led initiatives improving performance \textbf{40\%+}, reducing costs \textbf{30\%}, achieving \textbf{99.9\% uptime} for platforms serving \textbf{10,000+ users}. Expert in \textbf{system design}, \textbf{microservices}, \textbf{Clean Architecture}, cloud solutions. Technical leadership: mentoring engineers, establishing best practices, driving architectural decisions.
+  \vspace{0.1cm}
 
   % WORK EXPERIENCE
   \sectiontitle{Work Experience}
   
   \cventry{Software Engineer - L2 (Senior Backend Developer)}{October 2023 – Present}{Vector360}{Dhaka, Bangladesh (Remote)}{ 
-   \item \textbf{Architecture \& System Design:} Architected enterprise \textbf{ERP system} and \textbf{SmartKrishok} platform serving \textbf{10,000+ concurrent users} with \textbf{99.9\% uptime}. Designed scalable \textbf{microservices} with \textbf{Clean Architecture} and \textbf{CQRS}, reducing complexity by \textbf{35\%}
-   \item \textbf{API Design \& Performance:} Designed \textbf{RESTful APIs} with \textbf{ASP.NET Core 8}: versioning, rate limiting, distributed caching, Swagger docs. Optimized queries and Redis caching, achieving \textbf{40\% faster response times} (450ms to 270ms)
-   \item \textbf{Multi-Tenant Architecture:} Enhanced \textbf{multi-tenant SaaS platform} handling \textbf{500+ tenants} with strict isolation. Implemented tenant-aware middleware and dynamic connection management, ensuring \textbf{zero data leakage}
-   \item \textbf{DevOps \& Infrastructure:} Managed \textbf{AWS}/\textbf{DigitalOcean} infrastructure, \textbf{Nginx}, and \textbf{CI/CD pipelines}. Automated deployments reduced release time by \textbf{60\%} and errors by \textbf{80\%}
-   \item \textbf{Security \& Performance:} Implemented \textbf{JWT authentication}, OAuth 2.0, \textbf{OWASP principles}. Optimized performance through profiling and indexing, improving throughput by \textbf{50\%}
-   \item \textbf{Technical Leadership:} Mentored 2 junior developers, established coding standards, led design discussions and architecture reviews. Achieved \textbf{75\%+ test coverage} with unit/integration tests
+   \item Architected enterprise \textbf{ERP system} and \textbf{SmartKrishok} platform serving \textbf{10,000+ concurrent users} with \textbf{99.9\% uptime}. Designed scalable \textbf{microservices} with \textbf{Clean Architecture} and \textbf{CQRS}, reducing complexity \textbf{35\%}
+   \item Designed \textbf{RESTful APIs} with \textbf{ASP.NET Core 8}: versioning, rate limiting, distributed caching, Swagger. Optimized queries and Redis caching, achieving \textbf{40\% faster response times} (450ms to 270ms)
+   \item Enhanced \textbf{multi-tenant SaaS platform} handling \textbf{500+ tenants} with strict isolation. Implemented tenant-aware middleware and dynamic connection management, ensuring \textbf{zero data leakage}
+   \item Managed \textbf{AWS}/\textbf{DigitalOcean} infrastructure, \textbf{Nginx}, and \textbf{CI/CD pipelines}. Automated deployments reduced release time \textbf{60\%} and errors \textbf{80\%}
+   \item Implemented \textbf{JWT authentication}, OAuth 2.0, \textbf{OWASP principles}. Optimized performance through profiling and indexing, improving throughput \textbf{50\%}
+   \item Mentored 2 junior developers, established coding standards, led design discussions and architecture reviews. Achieved \textbf{75\%+ test coverage} with unit/integration tests
   }
 
   \cventry{Software Engineer (Backend Developer)}{August 2022 – September 2023}{Reserveit}{Dhaka, Bangladesh (Remote)}{ 
     \item Developed \textbf{multi-tenant reservation platform} using \textbf{ASP.NET Core 6/7} with booking, payment, notification systems
-    \item Built \textbf{RESTful APIs} with proper HTTP codes, error handling, documentation. Optimized \textbf{Entity Framework Core} patterns, reducing query time by \textbf{30\%}
+    \item Built \textbf{RESTful APIs} with proper HTTP codes, error handling, documentation. Optimized \textbf{Entity Framework Core} patterns, reducing query time \textbf{30\%}
     \item Implemented \textbf{microservices architecture} for booking, payment, notification services, improving scalability
     \item Collaborated with cross-functional teams in agile environment, participated in sprint planning and technical decisions
   }
@@ -121,7 +119,7 @@
   \cventry{Junior Software Engineer}{October 2021 – July 2022}{Belaface Ltd}{Dhaka, Bangladesh}{ 
     \item Developed \textbf{RESTful APIs} using \textbf{Django/Python} and \textbf{PostgreSQL} for e-commerce: product catalog, orders, authentication
     \item Built API endpoints for mobile/web apps. Optimized queries and caching, improving response times
-    \item Collaborated in agile environment, participated in code reviews. Reduced critical bugs by \textbf{40\%}
+    \item Collaborated in agile environment, participated in code reviews. Reduced critical bugs \textbf{40\%}
   }
 
   % PROJECTS
@@ -141,7 +139,7 @@
   
   % AWARDS
   \sectiontitle{Awards \& Recognition}
-  \begin{itemize}[itemsep=0.3pt, topsep=0pt]
+  \begin{itemize}[itemsep=0.2pt, topsep=0pt]
     \item \textbf{Engineer of the Month (Nov 2025)} - ERP: \textbf{45\%} automation, \textbf{99.95\% uptime}
     \item \textbf{Engineer of the Month (Apr 2025)} - API: \textbf{50\%} stability, \textbf{35\%} satisfaction
     \item \textbf{Quarterly Excellence (Q3 2024)} - Outstanding performance, high-impact projects
@@ -160,7 +158,7 @@
   \personalinfo{Remote}{Available}
   \personalinfo{Relocation}{Willing}
   
-  \vspace{0.1cm}
+  \vspace{0.08cm}
   
   % SKILLS - ASP.NET Core & API Specialization
   \sidebartitle{Technical Skills}
@@ -185,7 +183,7 @@
   % DIGITAL SKILLS (Europass Format)
   \sidebartitle{Digital Skills}
   \footnotesize
-  Programming: Expert | API Dev: Expert | System Design: Expert | DB: Advanced | Cloud: Advanced | DevOps: Advanced | Leadership: Advanced
+  Programming: Expert | API Dev: Expert | System Design: Expert | DB: Advanced | Cloud: Advanced | DevOps: Advanced
 
   % EDUCATION
   \sidebartitle{Education}
@@ -196,7 +194,7 @@
 
   \textbf{HSC (Science)} - B A F Shaheen College (\textit{2013 – 2015})
 
-  \vspace{0.08cm}
+  \vspace{0.06cm}
   \sidebartitle{Certifications}
   \footnotesize
   \textbf{SystemsExpert} (AlgoExpert.io - 2025) \\
@@ -211,7 +209,7 @@
   % ADDITIONAL INFORMATION
   \sidebartitle{Additional Info}
   \footnotesize
-  Remote work preferred | Flexible time zones | Seeking visa sponsorship | Willing to relocate
+  Remote work | Flexible time zones | Seeking visa sponsorship | Willing to relocate
 
 \end{minipage}
 
