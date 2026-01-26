@@ -5,7 +5,7 @@
 \documentclass[11pt, a4paper]{article}
 
 % --- Preamble & Packages ---
-\usepackage[a4paper, top=1.2cm, bottom=1.2cm, left=1.2cm, right=1.2cm]{geometry}
+\usepackage[a4paper, top=0.6cm, bottom=0.6cm, left=0.9cm, right=0.9cm]{geometry}
 \usepackage{fontspec}
 \setmainfont{Inter}
 
@@ -13,7 +13,7 @@
 \usepackage{hyperref}
 \hypersetup{colorlinks=true, urlcolor=accent, linkcolor=black}
 \usepackage{enumitem}
-\setlist[itemize]{label=\textbullet, itemsep=1pt, parsep=0pt, leftmargin=1.2em}
+\setlist[itemize]{label=\textbullet, itemsep=0.5pt, parsep=0pt, leftmargin=1em}
 \usepackage{xcolor}
 \usepackage{fontawesome5}
 \usepackage{framed}
@@ -34,24 +34,24 @@
 }
 
 \newcommand{\sectiontitle}[1]{
-  \vspace{0.4cm}
-  \noindent{\large\bfseries\color{accent}\MakeUppercase{#1}} \\[-0.3cm]
-  \noindent\textcolor{accent}{\rule{\linewidth}{1.5pt}}
-  \vspace{0.15cm}
+  \vspace{0.2cm}
+  \noindent{\normalsize\bfseries\color{accent}\MakeUppercase{#1}} \\[-0.2cm]
+  \noindent\textcolor{accent}{\rule{\linewidth}{1pt}}
+  \vspace{0.05cm}
 }
 
 \newcommand{\sidebartitle}[1]{
-  \vspace{0.3cm}
-  \noindent{\normalsize\bfseries\color{accent}\MakeUppercase{#1}} \\[-0.3cm]
-  \noindent\textcolor{accent}{\rule{\linewidth}{1pt}}
   \vspace{0.1cm}
+  \noindent{\footnotesize\bfseries\color{accent}\MakeUppercase{#1}} \\[-0.15cm]
+  \noindent\textcolor{accent}{\rule{\linewidth}{0.8pt}}
+  \vspace{0.03cm}
 }
 
 \newcommand{\cventry}[5]{
-  \vspace{0.2cm}
+  \vspace{0.08cm}
   \noindent\textbf{#1} \hfill \footnotesize\textit{#2} \\
   \normalsize\textit{#3} \hfill \footnotesize\textit{#4}
-  \begin{itemize}[topsep=2pt, itemsep=1pt]#5\end{itemize}
+  \begin{itemize}[topsep=0pt, itemsep=0.3pt, parsep=0pt]#5\end{itemize}
 }
 
 \newcommand{\personalinfo}[2]{
@@ -65,7 +65,7 @@
 \begin{minipage}[c]{0.72\textwidth}
   \cvheader{Kibria Islam}{Senior Backend Engineer | ASP.NET Core Specialist}
   
-  \vspace{4pt}
+  \vspace{1pt}
   {\scriptsize
   \faIcon{envelope} \href{mailto:kibriaislam82@gmail.com}{kibriaislam82@gmail.com} \;|\;
   \faIcon{phone} +8801912892907 \;|\;
@@ -82,11 +82,11 @@
   \setlength{\fboxsep}{0pt}
   \setlength{\fboxrule}{1pt}
   \fcolorbox{accent}{white}{%
-    \includegraphics[width=2.8cm,height=4.2cm,keepaspectratio]{C:/Users/reserveitbd/Pictures/kibriaimage.png}%
+    \includegraphics[width=2.2cm,height=3.3cm,keepaspectratio]{C:/Users/reserveitbd/Pictures/kibriaimage.png}%
   }
 \end{minipage}
 
-\vspace{0.3cm}
+\vspace{0.1cm}
 
 % --- MAIN LAYOUT ---
 \noindent
@@ -95,68 +95,56 @@
   
   % PROFESSIONAL SUMMARY
   \sectiontitle{Professional Summary}
-  \small
-  \noindent Results-driven \textbf{Senior Backend Engineer} with \textbf{4+ years} of specialized experience in \textbf{ASP.NET Core} and \textbf{RESTful API} development. Proven track record of architecting scalable, high-performance enterprise solutions serving \textbf{multi-tenant SaaS platforms} and government initiatives. Expert in \textbf{Clean Architecture}, \textbf{CQRS}, \textbf{microservices}, and cloud-native deployments. Led technical initiatives that improved API response times by \textbf{40\%+}, reduced infrastructure costs by \textbf{30\%}, and achieved \textbf{99.9\% uptime}. Strong background in \textbf{remote collaboration}, mentoring junior engineers, and driving technical excellence through code reviews and architectural decisions. Seeking opportunities to contribute to innovative teams in USA/Europe.
-  \vspace{0.4cm}
+  \footnotesize
+  \noindent Results-driven \textbf{Senior Backend Engineer} with \textbf{4+ years} specializing in \textbf{ASP.NET Core} and \textbf{RESTful API} development. Expert in \textbf{Clean Architecture}, \textbf{CQRS}, \textbf{microservices}, and cloud deployments. Led initiatives improving API response times by \textbf{40\%+}, reducing costs by \textbf{30\%}, achieving \textbf{99.9\% uptime}. Strong in remote collaboration, mentoring, and technical leadership. Seeking opportunities in USA/Europe.
+  \vspace{0.15cm}
 
   % WORK EXPERIENCE
   \sectiontitle{Work Experience}
   
-  \cventry{Software Engineer - L2 (Senior Backend Developer)}{October 2023 – Present}{Vector360}{Dhaka, Bangladesh (Remote Collaboration)}{ 
-   \item \textbf{Architecture \& Leadership:} Architected and led development of enterprise-grade \textbf{custom ERP system} and \textbf{SmartKrishok} (government agricultural platform), serving \textbf{10,000+ concurrent users} with \textbf{99.9\% uptime}. Applied \textbf{Clean Architecture} and \textbf{CQRS} patterns, reducing code complexity by \textbf{35\%} and improving maintainability.
-   \item \textbf{API Development \& Optimization:} Designed and implemented \textbf{RESTful APIs} using \textbf{ASP.NET Core 8} with advanced features: API versioning, rate limiting, request/response caching, and comprehensive Swagger documentation. Optimized database queries and implemented Redis caching, achieving \textbf{40\% reduction in average response time} (from 450ms to 270ms).
-   \item \textbf{Multi-Tenant Platform:} Maintained and enhanced \textbf{multi-tenant reservation platform} handling \textbf{500+ tenants} with strict data isolation. Implemented tenant-aware middleware, dynamic connection string management, and tenant-specific configuration, ensuring \textbf{zero data leakage} incidents.
-   \item \textbf{DevOps \& Infrastructure:} Managed production infrastructure on \textbf{AWS} (EC2, RDS, S3) and \textbf{DigitalOcean}, configured \textbf{Nginx} reverse proxy, and implemented \textbf{CI/CD pipelines} using GitHub Actions. Automated deployments reduced release time by \textbf{60\%} and deployment errors by \textbf{80\%}.
-   \item \textbf{Security \& Performance:} Implemented \textbf{JWT-based authentication}, OAuth 2.0 integration, and applied \textbf{OWASP security principles}. Conducted performance profiling, database indexing optimization, and query tuning, improving system throughput by \textbf{50\%}.
-   \item \textbf{Technical Leadership:} Mentored 2 junior developers, conducted code reviews, established coding standards, and led technical design discussions. Introduced unit testing practices achieving \textbf{75\%+ code coverage} and integration testing strategies.
-   \item \textbf{Remote Collaboration:} Collaborated with international teams across different time zones, participated in agile ceremonies, and delivered features in distributed development environment.
+  \cventry{Software Engineer - L2 (Senior Backend Developer)}{October 2023 – Present}{Vector360}{Dhaka, Bangladesh (Remote)}{ 
+   \item Architected enterprise \textbf{ERP system} and \textbf{SmartKrishok} platform serving \textbf{10,000+ users} with \textbf{99.9\% uptime}. Applied \textbf{Clean Architecture} and \textbf{CQRS}, reducing complexity by \textbf{35\%}
+   \item Designed \textbf{RESTful APIs} with \textbf{ASP.NET Core 8}: versioning, rate limiting, caching, Swagger. Optimized queries and Redis caching, achieving \textbf{40\% faster response times}
+   \item Enhanced \textbf{multi-tenant platform} handling \textbf{500+ tenants} with strict isolation. Implemented tenant-aware middleware, ensuring \textbf{zero data leakage}
+   \item Managed \textbf{AWS}/\textbf{DigitalOcean} infrastructure, \textbf{Nginx}, and \textbf{CI/CD pipelines}. Automated deployments reduced release time by \textbf{60\%} and errors by \textbf{80\%}
+   \item Implemented \textbf{JWT authentication}, OAuth 2.0, \textbf{OWASP principles}. Optimized performance through profiling and indexing, improving throughput by \textbf{50\%}
+   \item Mentored 2 junior developers, established coding standards, led design discussions. Achieved \textbf{75\%+ test coverage}
   }
 
-  \cventry{Software Engineer (Backend Developer)}{August 2022 – September 2023}{Reserveit}{Dhaka, Bangladesh (Remote Work)}{ 
-    \item Developed and maintained \textbf{multi-tenant reservation platform} using \textbf{ASP.NET Core 6/7}, serving service industry businesses with booking management, payment processing, and notification systems.
-    \item Built \textbf{RESTful APIs} following REST principles with proper HTTP status codes, error handling, and API documentation. Implemented \textbf{Entity Framework Core} with optimized database access patterns, reducing query execution time by \textbf{30\%}.
-    \item Designed and implemented \textbf{microservices architecture} for booking, payment, and notification services, improving system scalability and maintainability.
-    \item Collaborated with product managers and frontend teams to deliver features, participated in sprint planning, and contributed to technical decision-making processes.
-    \item Implemented \textbf{background job processing} using Hangfire for scheduled tasks, email notifications, and report generation, improving user experience and system efficiency.
+  \cventry{Software Engineer (Backend Developer)}{August 2022 – September 2023}{Reserveit}{Dhaka, Bangladesh (Remote)}{ 
+    \item Developed \textbf{multi-tenant reservation platform} using \textbf{ASP.NET Core 6/7} with booking, payment, notification systems
+    \item Built \textbf{RESTful APIs} with proper HTTP codes, error handling. Optimized \textbf{Entity Framework Core} patterns, reducing query time by \textbf{30\%}
+    \item Implemented \textbf{microservices architecture} for booking, payment, notification services
+    \item Collaborated with cross-functional teams, participated in sprint planning and technical decisions
   }
 
   \cventry{Junior Software Engineer}{October 2021 – July 2022}{Belaface Ltd}{Dhaka, Bangladesh}{ 
-    \item Developed and maintained \textbf{core RESTful APIs} using \textbf{Django/Python} and \textbf{PostgreSQL} for e-commerce platform, handling product catalog, order management, and user authentication workflows.
-    \item Implemented API endpoints for mobile and web applications, ensuring seamless integration with frontend teams. Optimized database queries and implemented caching strategies, improving API response times.
-    \item Collaborated with cross-functional teams in agile environment, participated in code reviews, and followed best practices for code quality and maintainability.
-    \item Resolved production issues, implemented bug fixes, and contributed to system stability improvements, reducing critical bugs by \textbf{40\%}.
+    \item Developed \textbf{RESTful APIs} using \textbf{Django/Python} and \textbf{PostgreSQL} for e-commerce: product catalog, orders, authentication
+    \item Built API endpoints for mobile/web apps. Optimized queries and caching, improving response times
+    \item Collaborated in agile environment, participated in code reviews. Reduced critical bugs by \textbf{40\%}
   }
 
   % PROJECTS
-  \sectiontitle{Key Projects \& Technical Achievements}
+  \sectiontitle{Key Projects}
   
-  \cventry{Subscription \& Membership Management SaaS Platform}{2025}{Personal Project | Open Source}{\href{https://github.com/kibriaislam/Subscription-Membership_Management_SaaS}{GitHub Repository}}{
-    \item \textbf{Technology Stack:} ASP.NET Core 8, Entity Framework Core, PostgreSQL, Redis, SignalR, Hangfire, MediatR, Serilog, xUnit
-    \item \textbf{Architecture:} Multi-tenant SaaS application implementing \textbf{Clean Architecture} with \textbf{CQRS} pattern using MediatR, ensuring separation of concerns and testability
-    \item \textbf{Real-time Features:} Implemented \textbf{SignalR} hubs for real-time notifications, membership status updates, and subscription alerts, enhancing user engagement
-    \item \textbf{Background Processing:} Configured \textbf{Hangfire} for scheduled tasks including membership expiry checks, automated billing, and report generation, ensuring reliable job execution
-    \item \textbf{Observability:} Integrated \textbf{Serilog} with structured logging, file/console outputs, and log aggregation for comprehensive debugging and monitoring capabilities
-    \item \textbf{Testing:} Achieved \textbf{80\%+ code coverage} with unit and integration tests, demonstrating commitment to code quality and reliability
+  \cventry{Subscription \& Membership Management SaaS}{2025}{Personal | Open Source}{\href{https://github.com/kibriaislam/Subscription-Membership_Management_SaaS}{GitHub}}{
+    \item \textbf{ASP.NET Core 8} multi-tenant SaaS with \textbf{Clean Architecture}, \textbf{CQRS} (MediatR), \textbf{SignalR}, \textbf{Hangfire}, \textbf{Serilog}. \textbf{80\%+ test coverage}
   }
 
-  \cventry{SmartKrishok - Government Agricultural Platform}{2024}{Vector360 | Government Initiative}{Production System}{
-    \item Architected backend system for agricultural information platform serving \textbf{50,000+ farmers} with real-time market prices, weather data, and farming advice
-    \item Designed \textbf{RESTful APIs} with versioning strategy, implemented caching layers, and optimized database queries for high-traffic scenarios
-    \item Implemented secure authentication/authorization, data encryption, and compliance with government security standards
+  \cventry{SmartKrishok - Government Platform}{2024}{Vector360}{Production}{
+    \item Backend for \textbf{50,000+ farmers}: real-time market prices, weather data. \textbf{RESTful APIs} with versioning, caching
   }
 
-  \cventry{Enterprise ERP System}{2024-2025}{Vector360 | Internal Project}{Production System}{
-    \item Led development of comprehensive ERP system covering inventory, HR, finance, and reporting modules
-    \item Implemented \textbf{microservices architecture} with API Gateway pattern, ensuring scalability and independent deployment capabilities
-    \item Designed database schema with proper indexing, implemented audit trails, and ensured data integrity across modules
+  \cventry{Enterprise ERP System}{2024-2025}{Vector360}{Production}{
+    \item ERP: inventory, HR, finance modules. \textbf{Microservices} with API Gateway, indexing, audit trails
   }
   
   % AWARDS
   \sectiontitle{Awards \& Recognition}
-  \begin{itemize}[itemsep=2pt]
-    \item \textbf{Engineer of the Month (November 2025) @ Vector360} - Recognized for delivering comprehensive ERP system that streamlined operations, improved process automation by \textbf{45\%}, and enhanced system reliability to \textbf{99.95\% uptime}
-    \item \textbf{Engineer of the Month (April 2025) @ Vector360} - Delivered critical API optimizations and features that improved system stability by \textbf{50\%} and increased customer satisfaction scores by \textbf{35\%} on reservation platform
-    \item \textbf{Quarterly Excellence Award (Q3 2024) @ Vector360} - Recognized for outstanding performance, delivering high-impact projects ahead of schedule, and consistently exceeding expectations through technical leadership
+  \begin{itemize}[itemsep=0.3pt, topsep=0pt]
+    \item \textbf{Engineer of the Month (Nov 2025)} - ERP: \textbf{45\%} automation, \textbf{99.95\% uptime}
+    \item \textbf{Engineer of the Month (Apr 2025)} - API: \textbf{50\%} stability, \textbf{35\%} satisfaction
+    \item \textbf{Quarterly Excellence (Q3 2024)} - Outstanding performance, high-impact projects
   \end{itemize}
   
 \end{minipage}%
@@ -168,173 +156,62 @@
   \sidebartitle{Personal Information}
   \footnotesize
   \personalinfo{Nationality}{Bangladeshi}
-  \personalinfo{Work Authorization}{Seeking Sponsorship}
-  \personalinfo{Remote Work}{Available}
-  \personalinfo{Relocation}{Willing to Relocate}
-  \personalinfo{Time Zone Flexibility}{Flexible (UTC±12)}
+  \personalinfo{Work Auth}{Seeking Sponsorship}
+  \personalinfo{Remote}{Available}
+  \personalinfo{Relocation}{Willing}
   
-  \vspace{0.2cm}
+  \vspace{0.1cm}
   
   % SKILLS - ASP.NET Core & API Specialization
   \sidebartitle{Technical Skills}
   \footnotesize
   
-  \textbf{Backend Technologies:}
-  \begin{itemize}[leftmargin=1em, itemsep=1pt]
-    \item \textbf{ASP.NET Core} (6/7/8)
-    \item C\# (.NET 6/7/8)
-    \item \textbf{RESTful API} Design
-    \item \textbf{Microservices} Architecture
-    \item Entity Framework Core
-    \item LINQ, Async/Await
-    \item SignalR (Real-time)
-  \end{itemize}
+  \textbf{Backend:} \textbf{ASP.NET Core} (6/7/8), C\#, \textbf{RESTful API}, \textbf{Microservices}, EF Core, LINQ, SignalR
   
-  \vspace{0.15cm}
-  \textbf{API Specialization:}
-  \begin{itemize}[leftmargin=1em, itemsep=1pt]
-    \item API Versioning
-    \item Rate Limiting
-    \item Request/Response Caching
-    \item Swagger/OpenAPI
-    \item API Gateway Patterns
-    \item GraphQL (Basic)
-  \end{itemize}
+  \textbf{API:} Versioning, Rate Limiting, Caching, Swagger/OpenAPI, API Gateway
   
-  \vspace{0.15cm}
-  \textbf{Architecture \& Patterns:}
-  \begin{itemize}[leftmargin=1em, itemsep=1pt]
-    \item Clean Architecture
-    \item CQRS (MediatR)
-    \item Repository Pattern
-    \item Unit of Work
-    \item SOLID Principles
-    \item Design Patterns
-  \end{itemize}
-
-  \vspace{0.15cm}
-  \textbf{Databases \& Caching:}
-  \begin{itemize}[leftmargin=1em, itemsep=1pt]
-    \item PostgreSQL, MySQL
-    \item Redis (Caching)
-    \item Database Indexing
-    \item Query Optimization
-    \item Database Tuning
-  \end{itemize}
-
-  \vspace{0.15cm}
-  \textbf{Security:}
-  \begin{itemize}[leftmargin=1em, itemsep=1pt]
-    \item JWT Authentication
-    \item OAuth 2.0
-    \item OWASP Principles
-    \item Data Encryption
-    \item API Security
-  \end{itemize}
-
-  \vspace{0.15cm}
-  \textbf{DevOps \& Cloud:}
-  \begin{itemize}[leftmargin=1em, itemsep=1pt]
-    \item AWS (EC2, S3, RDS)
-    \item DigitalOcean
-    \item Docker, Containerization
-    \item CI/CD (GitHub Actions)
-    \item Nginx, Linux Servers
-    \item Git, GitHub
-  \end{itemize}
-
-  \vspace{0.15cm}
-  \textbf{Testing \& Quality:}
-  \begin{itemize}[leftmargin=1em, itemsep=1pt]
-    \item Unit Testing (xUnit)
-    \item Integration Testing
-    \item Test Coverage (75\%+)
-    \item Code Reviews
-    \item Performance Profiling
-  \end{itemize}
-
-  \vspace{0.15cm}
-  \textbf{Other Technologies:}
-  \begin{itemize}[leftmargin=1em, itemsep=1pt]
-    \item Python, Django
-    \item Hangfire (Background Jobs)
-    \item Serilog (Logging)
-    \item MediatR (CQRS)
-  \end{itemize}
+  \textbf{Architecture:} Clean Architecture, CQRS (MediatR), Repository, SOLID, Design Patterns
+  
+  \textbf{Databases:} PostgreSQL, MySQL, Redis, Indexing, Query Optimization
+  
+  \textbf{Security:} JWT, OAuth 2.0, OWASP, Encryption, API Security
+  
+  \textbf{DevOps:} AWS (EC2, S3, RDS), DigitalOcean, Docker, CI/CD, Nginx, Linux, Git
+  
+  \textbf{Testing:} xUnit, Integration Testing, 75\%+ Coverage, Code Reviews
+  
+  \textbf{Other:} Python, Django, Hangfire, Serilog, MediatR
 
   % DIGITAL SKILLS (Europass Format)
   \sidebartitle{Digital Skills}
   \footnotesize
-  \textbf{Programming:} Expert \\
-  \textbf{API Development:} Expert \\
-  \textbf{Database Management:} Advanced \\
-  \textbf{Cloud Computing:} Advanced \\
-  \textbf{DevOps:} Advanced \\
-  \textbf{System Design:} Advanced \\
-  \textbf{Version Control:} Expert
+  Programming: Expert | API Dev: Expert | DB: Advanced | Cloud: Advanced | DevOps: Advanced | System Design: Advanced
 
   % EDUCATION
   \sidebartitle{Education}
   \footnotesize
   \textbf{B.Sc. Software Engineering} \\
   Daffodil International University \\
-  Dhaka, Bangladesh \\
-  \textit{2016 – 2021} \\
-  \textit{Relevant Coursework:} Software Architecture, Database Systems, Distributed Systems, Algorithms
+  \textit{2016 – 2021}
 
-  \vspace{0.2cm}
-  \textbf{HSC (Science)} \\
-  B A F Shaheen College Dhaka \\
-  \textit{2013 – 2015}
+  \textbf{HSC (Science)} - B A F Shaheen College (\textit{2013 – 2015})
 
-  \vspace{0.2cm}
+  \vspace{0.08cm}
   \sidebartitle{Certifications}
   \footnotesize
-  \textbf{SystemsExpert} \\
-  AlgoExpert.io \\
-  \textit{2025} \\
-  \textit{System Design \& Architecture}
-
-  \vspace{0.1cm}
-  \textbf{MLExpert} \\
-  AlgoExpert.io \\
-  \textit{2025} \\
-  \textit{Machine Learning Fundamentals}
+  \textbf{SystemsExpert} (AlgoExpert.io - 2025) \\
+  \textbf{MLExpert} (AlgoExpert.io - 2025)
   
   % LANGUAGES (Europass with CEFR)
   \sidebartitle{Languages}
   \footnotesize
-  \textbf{Bangla} \\
-  \textit{Understanding:} Native (C2) \\
-  \textit{Speaking:} Native (C2) \\
-  \textit{Writing:} Native (C2)
-  
-  \vspace{0.15cm}
-  \textbf{English} \\
-  \textit{Understanding:} Proficient (C1) \\
-  \textit{Speaking:} Proficient (C1) \\
-  \textit{Writing:} Proficient (C1) \\
-  \textit{Reading:} Proficient (C1)
+  \textbf{Bangla:} Native (C2) \\
+  \textbf{English:} Proficient (C1)
 
   % ADDITIONAL INFORMATION
-  \sidebartitle{Additional Information}
+  \sidebartitle{Additional Info}
   \footnotesize
-  \textbf{Work Preferences:}
-  \begin{itemize}[leftmargin=1em, itemsep=1pt]
-    \item Remote work preferred
-    \item Flexible time zones
-    \item Seeking visa sponsorship
-    \item Willing to relocate
-  \end{itemize}
-
-  \vspace{0.1cm}
-  \textbf{Interests:}
-  \begin{itemize}[leftmargin=1em, itemsep=1pt]
-    \item System Design
-    \item Open Source
-    \item Technical Blogging
-    \item Continuous Learning
-  \end{itemize}
+  Remote work preferred | Flexible time zones | Seeking visa sponsorship | Willing to relocate
 
 \end{minipage}
 
